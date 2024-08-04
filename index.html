@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post</title>
+    <style>
+        :root {
+            --background-color: #ffffff;
+            --text-color: #000000;
+            --button-color: #757575;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --background-color: #121212;
+                --text-color: #ffffff;
+                --button-color: #9e9e9e;
+            }
+        }
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .container {
+            max-width: 65%;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        @media (max-width: 768px) {
+            .container {
+                max-width: 100%;
+                padding: 10px;
+            }
+        }
+        .content {
+            line-height: 1.6;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .back-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: var(--button-color);
+            color: var(--background-color);
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            transition: background-color 0.3s;
+            z-index: 1000;
+        }
+        .back-button:hover {
+            background-color: #616161;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dotted var(--text-color);
+        }
+        .copy-button {
+            display: inline-block;
+            cursor: pointer;
+            margin-left: 5px;
+            font-size: 0.8em;
+            vertical-align: super;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 id="article-title"></h1>
+            <div id="article-content"></div>
+        </div>
+    </div>
+    <button class="back-button" onclick="window.close()">Close</button>
+
+    <script>
+        const article = { title: '1984 - The Ultimate Form of Totalitarianism', content: 'I just finished reading the dystopian novel "1984" in its original version. I realized that it\'s truly worth reading the original. Other interpretations often compress the content of the original book, and some even distort it. For example, the classic slogans of the English Socialist Party in the novel aren\'t actually absurd. Instead, they describe the rational - albeit terrifying - logic of the Party and the other two countries in the world they\'ve created. Therefore, not reading the original can lead to misunderstandings of the book\'s intent.\n\nSo, I won\'t be interpreting the plot of this book. Instead, I\'ll discuss the real-world shadows of the society in the book and talk about issues related to totalitarian societies. This book shows us a terrifying scenario - the ultimate form of totalitarianism, a totalitarian civilization. This article may contain spoilers, so I suggest reading the original novel before referring to this. Without further ado, let\'s begin today\'s discussion.\n\nPart One - The Party\'s Monopoly\n\nThroughout the book, the English Socialist Party, or EngSoc, leads the entire totalitarian government. In normal circumstances, especially in multi-party countries, even if one party controls the media, competing parties control other media outlets. This allows people to receive information that, while not completely true, can approach the truth through comprehensiveness.\n\nBut in such a totalitarian society, where a single party holds absolute dominance and no other parties are allowed to compete or even exist, the ruling party\'s control over information in society is almost absolute. All media and all information are controlled by the Party. Under this totalitarianism, the Party controls the media, information, and facts.\n\nBecause there are no other sources of information, people can only and are willing to believe the Party. What people believe collectively becomes what they consider to be the truth. So, the Party becomes what people believe to be the truth. But it\'s precisely what people believe to be true, rather than the actual truth, that influences people\'s judgments and thus affects the future direction of the world. This is the essence of EngSoc\'s slogan, "Who controls the past controls the future; who controls the present controls the past."\n\nAmong all aspects of truth, history is just one. The Party\'s control of truth goes far beyond this. As argued above, the Party controls not only the release of new information but can also control history. In the novel, Winston\'s job at the Ministry of Truth involves rewriting history for the Party. This happens when information the Party deems incorrect appears (such as the Party\'s previous incorrect predictions about the future, previously falsified data that needs to be aligned with current propaganda achievements, or the Party\'s previous wars with other countries). All old materials are destroyed and replaced with new materials containing the "correct" information.\n\nIn such a society, people cannot learn their true history through any historical materials, and they won\'t know that what they understand is incorrect because such arguments are not allowed to exist. They have no other ways to access information, and unless the Party exercises self-discipline, the information they receive will always align with the Party\'s interests. This society has no freedom of the press or freedom to access information. In this society, people have no truth in their hearts, not even a semblance of truth.\n\nPrecisely because people have no understanding of the real truth, their worldviews based on what they believe to be true are distorted. The Party deliberately creates and intensifies this to gain absolute control. In the book, for those who haven\'t yet fully become the ideal "new humans" under totalitarianism, they still need to find emotional outlets in their monotonous lives. But any other emotional outlets could potentially damage the Party\'s totalitarian rule. Thus, "Two Minutes Hate" and "Hate Week" emerge, used to let people roar with anger at the current enemy.\n\nThe only emotional outlet in life becomes hatred towards enemy countries. What\'s the benefit of this for the Party? This seemingly patriotic behavior, which appears beneficial to the country, actually serves to divert people\'s attention from real problems. Only in this way will people not blame the real cause of their reduced resources and worsening monotonous lives - the Party\'s leadership (rule). Instead, they are naturally guided towards hatred of enemy countries. In fact, this method is very successful. Orwell describes it thus: "The horrible thing about the Two Minutes Hate was not that one was obliged to act a part, but that it was impossible to avoid joining in."\n\nFor these masses, they seem full of passion for the country, but this is only a primary patriotic sentiment. It\'s a carefully planned and guided patriotic feeling that hasn\'t undergone any serious training and doesn\'t remember any of the country\'s problems. This sentiment doesn\'t come from their understanding of the world situation, nor from their understanding of politics, let alone from their logical reasoning. All of this comes only from their complete ignorance of the facts.\n\nThis is "Ignorance is Strength," the third of the Party\'s slogans. It means that under the Party\'s propaganda, education, and nurturing, when the Party has become the truth of the world that the masses can understand, knowledge of the real truth is powerless. From another perspective, it means that fully believing in the Party\'s words and Party-edited (tampered) documents generates enormous power. The power of ignorance produced by ignorance of the truth is an irrational brute force, but it\'s enough to overshadow sporadic pursuit of rational thinking and the results of rational thought.\n\nThe result is that the whole society is filled with an optimistic and upward atmosphere. However, this is not optimism towards universally recognized and pursued values, nor is it optimism because they\'ve achieved these values. On the contrary, it\'s precisely because they haven\'t achieved them, but in the Party\'s propaganda, they\'ve achieved what the Party thinks people can pursue, such as material abundance and national strength. Although these don\'t exist in reality, for those ignorant masses and some Party members, this is the motivation that keeps them living and loving the Party.\n\nThe ignorance of the masses is the strength of the monopolistic, totalitarian Party.\n\nPart Two - The Party and Other Countries\n\nIn the Party\'s narrative, the Party has a mission to liberate all of humanity. Of course, they don\'t really want to give humanity freedom, democracy, etc., but use this as a pretext to conquer humanity. In the Party\'s national anthem (an extended work), there\'s a line: "to keep our great revolution alive," which speaks to this. The method of liberation is through war, fighting over populous areas, nominally waging war against other countries.\n\nThe book describes little about the early stages of the revolution. Even for those most opposed to the current regime in the book, their view is that the revolution was betrayed. But looking at it more deeply, this kind of socialist revolution is impossible to succeed in the long term unless the leadership has a high level of awareness. This is because the socialist revolution is based on an incorrect theory, believing that only labor creates value and that capitalists don\'t create value. This has already been refuted by mainstream schools of modern economics. The value created by capitalists is the bearing of risk.\n\nA revolution based on such a theory certainly won\'t last long, because it inevitably leads to economic collapse. What will replace it are other ideas flying the flag of socialism, seeking their own interests. These people come precisely from the ranks of the previous revolution. Because the socialist revolution is led, and the power of this leadership is enormous, but there are no long-term institutional constraints on power. Unlimited expansion of rights brings unlimited corruption. So for the socialist revolution, there\'s no possibility of success, only the emergence of a totalitarian, uncontrollable regime.\n\nWhy is a multi-party system better than a one-party system? You might say that there can be different opinions within a party. But in reality, a party is a miniature political structure, and the purpose of this structure will inevitably become singular and unified as time passes. At this point, those who hold power within the party will eliminate dissent to expand their power. As long as a party has leadership, it will become unified. A multi-party system is a good constraint tool: firstly, it gives the ruling party motivation to maintain public support; secondly, it gives people the ability to choose different ideologies; and thirdly, it preserves social and informational diversity, avoiding the dictatorship that comes with one-party rule.\n\nAfter the initial stage of liberation, when the three-country balance model is formed, war becomes unique. Because in reality, this kind of war is not what we\'re familiar with, aimed at occupying territory. In the world of 1984, there are a total of three countries. The method of war is to fight over disputed territories, that is, the land between national borders. Since each country\'s strength is very balanced, war is conducted through one country allying with another to attack the third.\n\nBut because no country wants to destroy its own rule, and they want to maintain this state of balance between the three countries, their alliances are variable and changeable. But they\'re not sincere. Because once the balance is broken, the remaining two countries can only become enemies. And there will always be one side that wins in the end due to some accidental factors, causing the ruling groups and parties of the other country to lose the power they originally had, or even the possibility of survival.\n\nSo at this time, war is just a pretext, actually a channel for diverting conflicts and excess productivity. The object of the war itself is not important. And in fact, although the three countries all claim to have different values, their actual essence is the same - regimes based on the same logic of rule, regimes dominated by one party. At this time, war is the norm, and war brings direct peace, peace for the ruling party. This kind of war will only cause civilians to lose their family members and a certain amount of material rationing. But for the rulers, external war brings internal peace. This is "War is Peace":\n\nThe "war" between countries gives the Party reasons for the country\'s poverty and other problems, allowing the Party to obtain peace.\n\nPart Three - 1984 and China\n\nIn the real world, the country that most closely matches the description in 1984 is probably China (People\'s Republic of China).\n\nIn the novel, Oceania achieves absolute control through technological means, extrapolating the ultimate form of totalitarianism. In real life, China\'s control of information hasn\'t reached complete control even in the most extreme cases. But in real life, such centralization of power does exist, just not as intensely. For example, the [link: Great Firewall in China](https://en.wikipedia.org/wiki/Great_Firewall?wprov=sfti1) (the country where I live). (Click to go to the Wikipedia page describing the Great Firewall)\n\nIn the People\'s Republic of China, the Great Firewall is a nationwide network project and the main means of speech control for the Chinese Communist Party, because the internet is the easiest way to spread information unfavorable to the Party. The Internet Great Firewall, like the old Great Wall, both defend against the outside world. Their difference is that one defends against foreign invasion, while the other defends against real information from the free world outside. This is unique in the world - Chinese netizens (those who don\'t use VPNs or other means to circumvent the Great Firewall) use only a local area network rather than the internet.\n\nThey can\'t view foreign websites blocked by the firewall in various ways. These sites contain all kinds of information; they\'re complex, filled with junk and misinformation. But it\'s precisely this free information that allows truth to possibly be preserved. For example, the 1989 Tiananmen Square Massacre, the 2019 Anti-Extradition Law Amendment Bill Movement, the 2022 White Paper Movement. This is the banned history. The Chinese Communist Party uses its power to remove the truth from public view. This is the real-world counterpart to "1984".\n\nBut in the world of 1984, precisely because China hasn\'t reached that level yet, its technology isn\'t sufficient to control people\'s minds, so there are many cases of control failure. China\'s ruling party has actually, to some extent, long ceased to be the party of the past revolution. Now, China has entered an incomplete capitalist society under Deng\'s leadership. Of course, even this partial capitalism has given China many years of development. But after Xi Jinping came to power, he wants to regain power like Mao had before.\n\nSo in China, the current situation and the periods of the Cultural Revolution and the Great Leap Forward are different. The current situation is that the ruling party still maintains its rule through certain means, but it\'s not as extreme as in 1984. However, we can still see some similarities:\n\n1. Information Control: Although China\'s control over information isn\'t as absolute as in 1984, it\'s still very strict. The Great Firewall blocks many foreign websites, and domestic media are heavily censored.\n\n2. Historical Revisionism: Like the Ministry of Truth in 1984, the Chinese government often revises or erases historical events that don\'t align with its narrative. For example, the Tiananmen Square incident is largely unknown to younger generations in China.\n\n3. Surveillance: While not as extreme as the telescreens in 1984, China has an extensive surveillance network, including facial recognition cameras and internet monitoring.\n\n4. Propaganda: The Chinese government, like the Party in 1984, uses extensive propaganda to shape public opinion and maintain its rule.\n\n5. Cult of Personality: Although not as extreme as Big Brother, there has been a growing cult of personality around Xi Jinping, reminiscent of Mao\'s era.\n\n6. Newspeak: While China doesn\'t have an official language like Newspeak, the government often uses specific terminology to shape discourse. For example, referring to Taiwan as a "renegade province" instead of an independent country.\n\n7. Thought Crime: While not as severe as in 1984, China does punish "incorrect" political thoughts through methods like re-education camps, particularly in regions like Xinjiang.\n\nHowever, it\'s important to note that despite these similarities, China is not identical to the world of 1984. There are significant differences:\n\n1. Economic System: Unlike the stagnant economy in 1984, China has a mixed economy with both state-owned and private enterprises, and has experienced rapid economic growth.\n\n2. International Relations: China is not in a state of perpetual war like Oceania. It engages in international trade and diplomacy, although tensions with other countries exist.\n\n3. Technology: While technology is used for control in China, it\'s also a driver of economic growth and improved living standards, unlike in 1984 where technology primarily serves the Party.\n\n4. Level of Control: Despite strict controls, Chinese citizens generally have more personal freedoms than the citizens of Oceania in 1984.\n\n5. Resistance: Unlike in 1984 where resistance seems futile, there are instances of resistance and criticism in China, although they\'re often suppressed.\n\nIn conclusion, while China shares some concerning similarities with the world of 1984, it\'s not an exact parallel. The situation in China is complex and evolving. As citizens of the world, we should remain vigilant about threats to freedom and democracy, wherever they may arise. At the same time, we should strive to understand the nuances of different political systems and avoid oversimplification.\n\nThe novel 1984 serves as a warning about the dangers of totalitarianism and the importance of individual freedom. It reminds us to question authority, value truth, and protect our rights. As we navigate our increasingly complex world, let\'s keep these lessons in mind and work towards a future where freedom and truth prevail.', pinned: false };
+
+        function processContent(content) {
+            return content
+                .replace(/\[link:(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
+                .replace(/\[copy-broad:(.*?)\]/g, '$1<span class="copy-button" onclick="copyText(\'$1\')">❐</span>');
+        }
+
+        function copyText(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Text copied to clipboard');
+            }).catch(err => {
+                console.error('Failed to copy text: ', err);
+            });
+        }
+
+        function loadArticle() {
+            document.title = article.title;
+            document.getElementById('article-title').textContent = article.title;
+            document.getElementById('article-content').innerHTML = processContent(article.content);
+        }
+
+        window.onload = loadArticle;
+    </script>
+</body>
+</html>
